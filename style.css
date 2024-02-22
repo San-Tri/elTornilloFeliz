@@ -18,3 +18,22 @@ nav button {
     font-size: 1.3em;
     margin: 0 5px;
 }
+section {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.producto {
+    width: 14%;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.producto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
