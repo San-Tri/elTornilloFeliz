@@ -84,11 +84,12 @@ header {
     justify-content: space-between;
     flex: 0.8;
 }
+.carrito-vacío {
+    padding: 20px;
+    text-align: center;
+}
 .titulo-producto-carrito {
     font-size: 20px;
-}
-.precio-total {
-
 }
 .precio-producto-carrito {
     font-weight: 700;
