@@ -2,30 +2,14 @@
 *::after,
 *::before,
 *{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-}
-body {
-    margin: 0 auto;
     justify-content: space-between;
     font-family: Arial, sans-serif;
-    color: #555;
+}
+body {
     background: linear-gradient(to right, #10002b, #7b2cbf);
-}
-header button {
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 1.3em;
-    width: 25px;
-    height: 25px;
-}
-header button:hover {
-    cursor: pointer;
-}
-img {
-    max-width: 100;
 }
 header {
     display: flex;
@@ -33,9 +17,15 @@ header {
     padding: 10px 0 10px 0;
     color: #fff;
     background-color: #333;
-    /* text-align: center;  */
-    /* position: relative; */
-    /* text-align: end; */
+}
+header button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.3em;
+}
+header button:hover {
+    cursor: pointer;
 }
 .contenedor-iconos {
     position: relative;
@@ -44,12 +34,12 @@ header {
     position: absolute;
     top: 55%;
     right: 0;
-
+    
     background-color: #000;
     color: #fff;
     width: 25px;
     height: 25px;
-
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,11 +50,11 @@ header {
 }
 .contenedor-carrito {
     position: absolute;
-    top: 50px;
+    top: 64px;
     right: 0;
-
-    background-color: #59189ace;
-    border: 1px solid #240046;
+    
+    background-color: #000000b6;
+    border: 1px solid #000000;
     width: 400px;
     z-index: 1;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
@@ -75,7 +65,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 30px;
-
+    
     border-bottom: 1px solid rgba(0, 0, 0, 0.20);
 }
 .info-producto{
@@ -87,6 +77,9 @@ header {
 .carrito-vacío {
     padding: 20px;
     text-align: center;
+}
+.img {
+    /* max-width: 100%; */
 }
 .titulo-producto-carrito {
     font-size: 20px;
@@ -158,13 +151,19 @@ button {
     cursor: pointer;
 
 }
+/*Main*/
+.contenedor-productos{
+    display: grid;
+    grid-template-columns: repeat(1, 4fr);
+    gap: 20px;
+}
 footer {
     background-color: #333;
     color: #fff;
     padding: 3px;
     text-align: center;
     bottom: 0;
-    width: 99.5%;
+    width: 100%;
 }
 .registro {
     display: none;
@@ -174,10 +173,10 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 400px;
-    padding: 20px;
-    background-color: #59189ace;
-    border: 1px solid #240046;
-    z-index: 999;
+    padding: 40px;
+    background-color: #000000b6;
+    border: 1px solid #000000;
+    z-index: 1;
     color: #ffffff;
 }
 .registro h2 {
