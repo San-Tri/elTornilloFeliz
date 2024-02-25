@@ -1,14 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #10002b, #7b2cbf);
+}
 header {
     background-color: #333;
+    padding: 5px;
     color: #fff;
-    padding: 10px;
     text-align: center;
 }
 nav {
     background-color: #444;
-    color: #fff;
     padding: 10px;
-    text-align: center;
+    text-align: end;
 }
 nav button {
     background: none;
@@ -36,4 +41,46 @@ section {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
+}
+.tornillo {
+    /* display: none; */
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+.registro {
+    display: none;
+    border-radius: 6px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    padding: 20px;
+    background-color: #59189ace;
+    border: 1px solid #240046;
+    z-index: 999;
+    color: #ffffff;
+}
+.registro h2 {
+    text-align: center;
+}
+.registro label {
+    display: block;
+    margin-top: 10px;
+}
+.registro input {
+    width: 95%;
+    padding: 2px;
+    margin-top: 5px;
+}
+.registro input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-style: ridge;
 }

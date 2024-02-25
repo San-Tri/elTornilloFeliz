@@ -8,7 +8,7 @@
     <title>ElTornilloFeliz</title>
 </head>
 <body>
-    <div>
+    <div class="Tornillo">
         <header>
             <h1>El Tornillo Feliz</h1>
         </header>
@@ -19,6 +19,8 @@
             </button>
             <button id="icono-carrito" onclick="mostrarCarrito()">
                 <i class="bi bi-cart"></i>
+
+                <span id="contadorCarrito">0</span>
             </button>
         </nav>
 
@@ -168,5 +170,23 @@
             </div>
         </section>
     </div>
+
+    <div id="formularioRegistro" class="registro">
+        <h2>Inicio de seccion</h2>
+        <form action="cliente.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" required><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" name="email" required><br>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" name="contrasena" required><br>
+            
+            <input type="submit" value="Enviar"><br>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
