@@ -2,13 +2,13 @@
 *::after,
 *::before,
 *{
-    margin: 0 auto;
-    padding: 0;
     box-sizing: border-box;
     justify-content: space-between;
     font-family: Arial, sans-serif;
 }
 body {
+    margin: 0 ;
+    padding: 0;
     background: linear-gradient(to right, #10002b, #7b2cbf);
 }
 header {
@@ -27,11 +27,16 @@ header button {
 header button:hover {
     cursor: pointer;
 }
-.contenedor-iconos {
-    position: relative;
-}
+#icono-usuario, #icono-carrito {
+    display: inline-block;
+  }
+  
+/* .contenedor-iconos {
+    /* position: relative; */
+    /* display: inline-block;
+} */ 
 .contador-producto {
-    position: absolute;
+    /* position: absolute; */
     top: 55%;
     right: 0;
     
@@ -152,19 +157,10 @@ button {
 
 }
 /*Main*/
-.contenedor-productos{
-    display: grid;
-    grid-template-columns: repeat(1, 4fr);
-    gap: 20px;
+.contenedor-producto{
+    padding: 15px;
 }
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 3px;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-}
+
 .registro {
     display: none;
     border-radius: 6px;
@@ -196,4 +192,12 @@ footer {
     color: #fff;
     cursor: pointer;
     border-style: ridge;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 3px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
 }
