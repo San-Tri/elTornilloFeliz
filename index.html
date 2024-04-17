@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-<!-- Código de instalación Cliengo para Tornillin.pe --> <script type="text/javascript">(function () { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/65e51cb5268e710032425707/65e51f15268e710032425721.js?platform=onboarding_modular'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); })();</script>
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -13,14 +12,14 @@
 
                 <div class="icono-login icon-o">
                     <!--boton login-->
-                    <button id="icono-usuario">
+                    <button class="icono" id="icono-usuario">
                         <i class="bi bi-person"></i>
                     </button>
                 </div>
                 <div class="contenedor-iconos">
                     <div class="contenedor-carrito-icono icon-o">
                         <!--botoon carrito-->
-                        <button id="icono-carrito" onclick="mostrarCarrito()">
+                        <button class="icono" id="icono-carrito" onclick="mostrarCarrito()">
                             <i class="bi bi-cart"></i>
                         </button>
                         <!--contador de productos-->
@@ -30,27 +29,27 @@
                     </div>                          
                 </div>
 
-                    <!--ejemplo del producto en el carrito-->
-                    <div class="contenedor-carrito ocultar-carrito">
-                        <div class="lista-producto ocultar">
-                            <div class="carrito-producto">
-                                <!-- <div class="info-producto">
-                                    <span class="cantidad-producto-carrito">1</span>
-                                    <p class="titulo-producto-carrito">Martillo</p>
-                                    <span class="precio-producto-carrito">$80</span>
-                                </div> -->
-                                <!--x para cerrar  carrito-->
-                                <button class="boton-x"><i class="bi bi-x-lg"></i></button>
-                            </div>
+                <!--ejemplo del producto en el carrito-->
+                <div class="contenedor-carrito ocultar-carrito">
+                    <div class="lista-producto ocultar">
+                        <div class="carrito-producto">
+                            <!-- <div class="info-producto">
+                                <span class="cantidad-producto-carrito">1</span>
+                                <p class="titulo-producto-carrito">Martillo</p>
+                                <span class="precio-producto-carrito">$80</span>
+                            </div> -->
+                            <!--x para cerrar  carrito-->
+                            <button class="boton-x">
+                                <i class="bi bi-x-lg"></i>
+                            </button>
                         </div>
-
-                        <!--precio total-->
-                        <div class="precio-total pago">
-                            <h3>Total:</h3>
-                            <span class="total-pagar">$0</span>
-                        </div>
-                        <p class="carrito-vacío">El carrito esta vacío</p>
                     </div>
+                    <!--precio total-->
+                    <div class="precio-total pago">
+                        <h3>Total:</h3>
+                        <span class="total-pagar">$0</span>
+                    </div>
+                    <p class="carrito-vacío">El carrito esta vacío</p>
                 </div>
         </header>
 
